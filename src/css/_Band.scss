@@ -1,0 +1,16 @@
+.Band {
+  z-index: 0;
+  width: 100%;
+  background-color: $band-back-color;
+  position: absolute;
+  left: 0;
+  color: #ffffff;
+  height: $band-height;
+  & > h1 {
+    margin-top: 15px;
+    padding-left: 10%;
+  }
+  & > p {
+    padding-left: 10%;
+  }
+}

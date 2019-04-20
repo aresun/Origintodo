@@ -1,0 +1,27 @@
+.Sidebar {
+  width: 20%;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #eb1088;
+  height: 100%;
+  min-width: $avatar-width + 60px;
+  min-height: 800px;
+  & a {
+    display: block;
+    width: 90%;
+    font-size: 36px;
+    height: $sidebar-link-height;
+    line-height: $sidebar-link-height;
+    background-color: aqua;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    &:hover {
+      background-color: black;
+      color: #ffffff;
+    }
+  }
+}

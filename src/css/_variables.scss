@@ -1,0 +1,20 @@
+@mixin showBorder {
+  border: 1px solid gold;
+  box-sizing: border-box;
+}
+@mixin showBack {
+  background-color: magenta;
+}
+
+$band-height: 100px;
+$band-back-color: #382ebd;
+
+$sidebar-back-color: #eb1088;
+$sidebar-link-height: 80px;
+$avatar-width: 200px;
+
+$input-width: 600px;
+@mixin inputBorder {
+  border: 2px solid #000000;
+  outline: none;
+}

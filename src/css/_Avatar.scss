@@ -1,0 +1,12 @@
+.Avatar {
+  border-radius: 50%;
+  width: $avatar-width;
+  height: $avatar-width;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  background-color: aquamarine;
+  font-size: 60px;
+  text-align: center;
+  line-height: $avatar-width;
+}
