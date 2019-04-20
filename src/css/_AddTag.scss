@@ -1,0 +1,11 @@
+.AddTag {
+  display: inline-block;
+  width: $add-tag-width;
+  height: $add-tag-width;
+  line-height: $add-tag-width;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #000000;
+  color: #fff;
+}

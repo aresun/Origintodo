@@ -4,8 +4,9 @@ import { Switch, Route } from "react-router-dom";
 /* conponents */
 import Nav from "./componets/nav/Nav";
 import Sidebar from "./componets/nav/Sidebar";
-import Add from "./componets/mainContent/Add";
 import Home from "./componets/mainContent/Home";
+import Add from "./componets/mainContent/Add";
+import Unfinished from "./componets/mainContent/Unfinished";
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/add" component={Add} />
-            <Route exact path="/add" component={Add} />
+            <Route exact path="/unfinished" component={Unfinished} />
           </Switch>
         </div>
       </div>

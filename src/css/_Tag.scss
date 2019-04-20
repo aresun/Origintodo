@@ -1,10 +1,31 @@
 .Tag {
   border-radius: 10px;
-  padding: 1px 16px;
+  padding: 2px 16px;
   background-color: aqua;
   display: inline-block;
-  line-height: 30px;
-  height: 30px;
+  line-height: 26px;
+  height: 26px;
   margin: 0 5px;
   text-align: center;
+  vertical-align: middle;
+  // overflow: hidden;
+  & > span {
+    transform: rotate(45deg);
+    border-radius: 50%;
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+    line-height: 26px;
+    background-color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: all 200ms ease;
+    position: relative;
+    left: 6px;
+    top: -2px;
+  }
+  &:hover > span {
+    width: 26px !important;
+    height: 26px !important;
+  }
 }
