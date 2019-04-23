@@ -9,8 +9,7 @@
 $band-height: 100px;
 $band-back-color: #382ebd;
 
-// $sidebar-back-color: #eb1088;
-$sidebar-back-color: #8d8d8d;
+$sidebar-back-color: #eb1088;
 $sidebar-link-height: 80px;
 $avatar-width: 200px;
 
@@ -24,7 +23,7 @@ $add-tag-width: 32px;
 $check-box-width: 60px;
 $check-box-height: $check-box-width;
 $inner-circle-radius: 36px;
-$check-box-border-color: #dadada;
+$check-box-border-color: #525252;
 @mixin checkBoxBorder {
   border: 1px solid $check-box-border-color;
   box-sizing: border-box;
