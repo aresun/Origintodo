@@ -1,13 +1,14 @@
 {
-  "main.css": "/Origintodo/static/css/main.95b3431e.chunk.css",
-  "main.js": "/Origintodo/static/js/main.58996b55.chunk.js",
-  "main.js.map": "/Origintodo/static/js/main.58996b55.chunk.js.map",
+  "main.css": "/Origintodo/static/css/main.bf7b5459.chunk.css",
+  "main.js": "/Origintodo/static/js/main.5073398c.chunk.js",
+  "main.js.map": "/Origintodo/static/js/main.5073398c.chunk.js.map",
   "runtime~main.js": "/Origintodo/static/js/runtime~main.9e2b83c7.js",
   "runtime~main.js.map": "/Origintodo/static/js/runtime~main.9e2b83c7.js.map",
-  "static/js/2.85fd13d3.chunk.js": "/Origintodo/static/js/2.85fd13d3.chunk.js",
-  "static/js/2.85fd13d3.chunk.js.map": "/Origintodo/static/js/2.85fd13d3.chunk.js.map",
+  "static/js/2.a97af3d8.chunk.js": "/Origintodo/static/js/2.a97af3d8.chunk.js",
+  "static/js/2.a97af3d8.chunk.js.map": "/Origintodo/static/js/2.a97af3d8.chunk.js.map",
   "index.html": "/Origintodo/index.html",
-  "precache-manifest.e3f8048f0dd0e005cdf4295dd17360a2.js": "/Origintodo/precache-manifest.e3f8048f0dd0e005cdf4295dd17360a2.js",
+  "precache-manifest.1f357fc3ddb2b3f511f31994b57199c1.js": "/Origintodo/precache-manifest.1f357fc3ddb2b3f511f31994b57199c1.js",
   "service-worker.js": "/Origintodo/service-worker.js",
-  "static/css/main.95b3431e.chunk.css.map": "/Origintodo/static/css/main.95b3431e.chunk.css.map"
+  "static/css/main.bf7b5459.chunk.css.map": "/Origintodo/static/css/main.bf7b5459.chunk.css.map",
+  "static/media/payment.jpg": "/Origintodo/static/media/payment.a7c78c08.jpg"
 }
