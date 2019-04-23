@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Origintodo/static/js/runtime~main.9e2b83c7.js"
   },
   {
-    "revision": "d9594fea1bfccf74d11a",
+    "revision": "61812a0d5b003a139634",
     "url": "/Origintodo/static/js/main.58996b55.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/Origintodo/static/js/2.85fd13d3.chunk.js"
   },
   {
-    "revision": "d9594fea1bfccf74d11a",
-    "url": "/Origintodo/static/css/main.1a15e0db.chunk.css"
+    "revision": "61812a0d5b003a139634",
+    "url": "/Origintodo/static/css/main.95b3431e.chunk.css"
   },
   {
-    "revision": "4c0cea48998f51fdbec640796c972e03",
+    "revision": "a207673861c4f12953c8a54384c6ea88",
     "url": "/Origintodo/index.html"
   }
 ];
