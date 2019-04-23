@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 @mixin showBack {
-  background-color: magenta;
+  background-color: #ff1188;
 }
 
 $band-height: 100px;
@@ -19,3 +19,20 @@ $input-width: 600px;
   outline: none;
 }
 $add-tag-width: 32px;
+
+$check-box-width: 60px;
+$check-box-height: $check-box-width;
+$inner-circle-radius: 36px;
+$check-box-border-color: #dadada;
+@mixin checkBoxBorder {
+  border: 1px solid $check-box-border-color;
+  box-sizing: border-box;
+}
+
+$todo-width: 780px;
+$title-height: $check-box-height;
+$tags-container-width: 500px;
+
+$UfList-width: 865px;
+
+$page-number-height: 25px;

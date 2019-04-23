@@ -5,7 +5,7 @@ const Tag = props => {
     <div className="Tag">
       {props.name}
       {/* delete this tag */}
-      <span>+</span>
+      <span onClick={props.handler}>+</span>
     </div>
   );
 };

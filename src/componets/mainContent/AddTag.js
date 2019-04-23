@@ -1,7 +1,11 @@
 import React from "react";
 
 const AddTag = props => {
-  return <span className="AddTag">+</span>;
+  return (
+    <div className="AddTag" onClick={props.handler}>
+      +
+    </div>
+  );
 };
 
 export default AddTag;

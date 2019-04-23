@@ -1,0 +1,17 @@
+div.UfList {
+  width: $UfList-width;
+  @include showBorder;
+  margin: 0 auto;
+  padding-top: 100px;
+  & > span.info {
+    display: block;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 6px;
+    color: #ffffff;
+    @include showBack;
+    margin: 0 auto;
+  }
+}

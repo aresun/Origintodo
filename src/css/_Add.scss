@@ -1,17 +1,20 @@
 .Add {
   width: 100%;
   @include showBorder;
-  padding-top: 100px;
+  padding-top: 50px;
   & > div {
     // text-align: center;
     width: 740px;
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     &:nth-child(4) {
       margin-bottom: 0px;
     }
     & > h3 {
       margin-bottom: 20px;
+    }
+    & > div.noTags {
+      text-align: center;
     }
   }
 
@@ -21,14 +24,14 @@
     @include inputBorder;
   }
   & div > h3 + input {
-    padding: 0 60px;
+    padding: 2px 60px;
     text-align: center;
-    height: 50px;
-    font-size: 30px;
+    height: 36px;
+    font-size: 25px;
   }
   & textarea {
     font-size: 26px;
-    height: 200px;
+    height: 156px;
     resize: none;
     padding: 20px 60px;
   }

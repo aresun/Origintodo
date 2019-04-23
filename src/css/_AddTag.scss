@@ -1,11 +1,18 @@
 .AddTag {
-  display: inline-block;
+  margin: 20px auto;
   width: $add-tag-width;
   height: $add-tag-width;
   line-height: $add-tag-width;
   text-align: center;
-  vertical-align: middle;
   border-radius: 50%;
   background-color: #000000;
   color: #fff;
+  user-select: none;
+  transition: all 1000ms ease;
+  &:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
 }

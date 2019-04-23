@@ -1,0 +1,25 @@
+div.Page {
+  padding-top: 20px;
+  width: $UfList-width;
+  @include showBorder;
+  margin: 0 auto;
+  text-align: center;
+  & > input {
+    width: 20px;
+    @include inputBorder;
+    height: $page-number-height;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: -2px;
+  }
+  & > span {
+    display: inline-block;
+    width: 90px;
+    height: $page-number-height;
+    line-height: $page-number-height;
+    border: 2px solid #000000;
+    margin: 0 6px;
+    border-radius: 6px;
+  }
+}

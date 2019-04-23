@@ -1,5 +1,9 @@
 @import "./variables";
-
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 @import "./Band.scss";
 @import "./App.scss";
 @import "./Sidebar.scss";
@@ -8,3 +12,9 @@
 @import "./Add.scss";
 @import "./Tag.scss";
 @import "./AddTag.scss";
+@import "./Checkbox.scss";
+@import "./Todo.scss";
+@import "./Label.scss";
+@import "./Unfinished.scss";
+@import "./UfList.scss";
+@import "./Page.scss";
