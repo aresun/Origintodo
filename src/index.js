@@ -7,7 +7,7 @@ import store from "./redux/store";
 import { Provider } from "react-redux";
 
 /* router */
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 /* scss */
 import "./css/common.scss";
@@ -18,9 +18,9 @@ import App from "./App";
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>,
   document.getElementById("root")
 );
