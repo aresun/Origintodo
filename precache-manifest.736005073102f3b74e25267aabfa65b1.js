@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Origintodo/static/css/main.1a15e0db.chunk.css"
   },
   {
-    "revision": "b2b6e7ab8fa03d3201f45c84738644cb",
+    "revision": "4c0cea48998f51fdbec640796c972e03",
     "url": "/Origintodo/index.html"
   }
 ];
