@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import UnfinishedList from "./UfList";
+import TrashList from "./TrashList";
 import Page from "./Page";
 
-export class Unfinished extends Component {
+class Trash extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,12 +23,11 @@ export class Unfinished extends Component {
   updateCurrent = num => {
     this.setState({ current: num });
   };
-
   render() {
     const { quantity, current, maxPage } = this.state;
     return (
-      <div className="Unfinished clearfix">
-        <UnfinishedList
+      <div className="Trash clearfix">
+        <TrashList
           quantity={quantity}
           page={current}
           handler={this.updateTotal}
@@ -38,5 +37,4 @@ export class Unfinished extends Component {
     );
   }
 }
-
-export default Unfinished;
+export default Trash;

@@ -4,7 +4,7 @@ import Tag from "./Tag";
 import AddTag from "./AddTag";
 
 import { connect } from "react-redux";
-import addTodo from "../../redux/actions/addTodo";
+import { addTodo } from "../../redux/actions/unfinished";
 
 export class Add extends Component {
   constructor(props) {
@@ -95,13 +95,6 @@ export class Add extends Component {
           />
         </div>
         <div>
-          <h3>Todo Content</h3>
-          <textarea
-            onChange={this.handleContentChange}
-            value={this.state.content}
-          />
-        </div>
-        <div>
           <h3>Tages</h3>
           <input
             type="text"
@@ -124,6 +117,13 @@ export class Add extends Component {
               ))
             )}
           </div>
+        </div>
+        <div>
+          <h3>Todo Content</h3>
+          <textarea
+            onChange={this.handleContentChange}
+            value={this.state.content}
+          />
         </div>
         <div className="buttons">
           <input type="button" onClick={this.handleSubmit} value="Submit" />

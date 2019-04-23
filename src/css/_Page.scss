@@ -1,7 +1,7 @@
 div.Page {
   padding-top: 20px;
   width: $UfList-width;
-  @include showBorder;
+  // @include showBorder;
   margin: 0 auto;
   text-align: center;
   & > input {

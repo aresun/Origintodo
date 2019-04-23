@@ -1,27 +1,12 @@
 import React, { Component } from "react";
-
-import { connect } from "react-redux";
-import {
-  removeFromUnf,
-  finishTodoByIndex
-} from "../../redux/actions/unfinished";
-import { addFinished } from "../../redux/actions/finished";
-import { addTrash } from "../../redux/actions/trash";
 import Todo from "./Todo";
-import Checkbox from "./Checkbox";
 import Remove from "./Remove";
 
-/* Unfinished list */
+import { connect } from "react-redux";
+import { removeFromF } from "../../redux/actions/finished";
+import { addTrash } from "../../redux/actions/trash";
 
-/* --- props --- */
-// unfinished: array of todos from store
-// quantity: number of todos in one page
-// page: number of current page
-// total: total number of unfinished todos
-// handler: pass total to parent
-/* --- props --- */
-
-export class UfList extends Component {
+export class FList extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -31,35 +16,26 @@ export class UfList extends Component {
     nextProps.handler(nextProps.total);
     return null;
   }
-  removeUftodo = (i, todo) => {
-    // * unfinished
-    // * to trash
-    this.props.dispatchRemoveUnfinished(i, todo);
-  };
-  finishTodo = (i, todo) => {
-    // i for unf, todo for add
-    this.props.dispatchFinishTodo(i, todo);
+  removeF = (i, todo) => {
+    // remove finished to trash
+    // * finished
+    this.props.dispatchRemoveFinished(i, todo);
   };
   render() {
-    const list = this.props.unfinished.map((todo, index) => {
+    const list = this.props.finished.map((todo, index) => {
       return (
         <div key={index} className="clearfix">
           <Remove
             handler={e => {
-              this.removeUftodo(index, todo);
+              this.removeF(index, todo);
             }}
           />
           <Todo title={todo.title} tags={todo.tags} content={todo.content} />
-          <Checkbox
-            handler={e => {
-              this.finishTodo(index, todo);
-            }}
-          />
         </div>
       );
     });
     return (
-      <div className="UfList clearfix">
+      <div className="FList clearfix">
         {list.length > 0 ? list : <span className="info">No Todos</span>}
       </div>
     );
@@ -70,7 +46,7 @@ export class UfList extends Component {
  * @param { max number of a page } quantity
  * @param { page number } page
  */
-const getUnfinished = (state, quantity, page) => {
+const getFinished = (state, quantity, page) => {
   const len = state.length;
   // not enough as a page
   if (len <= quantity) {
@@ -90,20 +66,16 @@ const getUnfinished = (state, quantity, page) => {
   }
 };
 const mapStateToProps = (state, ownProps) => ({
-  unfinished: getUnfinished(state.unfinished, ownProps.quantity, ownProps.page),
-  total: state.unfinished.length
+  finished: getFinished(state.finished, ownProps.quantity, ownProps.page),
+  total: state.finished.length
 });
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  dispatchRemoveUnfinished: (index, todo) => {
-    dispatch(removeFromUnf(index));
+  dispatchRemoveFinished: (index, todo) => {
+    dispatch(removeFromF(index));
     dispatch(addTrash(todo));
-  },
-  dispatchFinishTodo: (index, todo) => {
-    dispatch(finishTodoByIndex(index));
-    dispatch(addFinished(todo));
   }
 });
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(UfList);
+)(FList);
