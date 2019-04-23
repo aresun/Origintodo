@@ -40,6 +40,9 @@ a:active {
   .Sidebar {
     left: 865px;
   }
+  .Band {
+    width: 865px !important;
+  }
   #content {
     width: 865px !important;
   }
@@ -48,4 +51,7 @@ a:active {
 .activeLink {
   background-color: #000000 !important;
   color: #ffffff !important;
+}
+.logo {
+  // display: ;
 }

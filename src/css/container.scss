@@ -1,9 +1,6 @@
 @import "./variables";
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
-}
+
+@import "./Navbar.scss";
 @import "./Band.scss";
 @import "./App.scss";
 @import "./Sidebar.scss";
